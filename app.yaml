@@ -1,5 +1,5 @@
 runtime: nodejs16
-service: test-frontend
+service: test-cx-frontend
 env_variables:
   GOOGLE_APPLICATION_CREDENTIALS: ~/ .key.json
 handlers:
