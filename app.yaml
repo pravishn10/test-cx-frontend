@@ -1,0 +1,11 @@
+runtime: nodejs16
+service: test-frontend
+env_variables:
+  GOOGLE_APPLICATION_CREDENTIALS: ~/ .key.json
+handlers:
+  - url: /.*
+    script: auto
+    secure: always
+    redirect_http_response_code: '301'
+  - url: .*
+    script: auto

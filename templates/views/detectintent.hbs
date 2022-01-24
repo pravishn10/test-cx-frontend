@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Detect Intent</title>
+        <link rel="icon" href="/img/weather.png">
+        <!--<link rel="stylesheet" href="./css/styles.css"> This is the relative path-->
+        <!-- Below we are setting the absolute path, as the app server is pointing to public directory-->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p> Use this site to get your conversational output! </p>
+
+            <form action="">
+                <input placeholder="Query Text" type="text">
+                <button> Submit </button>
+            </form>
+            <p id="message-1"></p>
+        </div>
+        
+        {{>footer}}
+        <script src="/js/detectIntent.js"></script>
+    </body>
+</html>
